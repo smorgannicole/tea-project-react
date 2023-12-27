@@ -1,0 +1,92 @@
+@import url("~bootstrap/dist/css/bootstrap.min.css") layer(framework);
+
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    color: #535D3F;
+    background-color: #B77960;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img.header-logo {
+    max-height: 70px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.main-wrapper {
+    background-color: #F6F1DB;
+    position: relative;
+    height: 100%;
+    width: 95%;
+    margin: 5vh auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3), 8px 0 8px -3px rgba(0, 0, 0, 0.3), 0 -4px 8px -3px rgba(0, 0, 0, 0.3), -8px 0 8px -3px rgba(0, 0, 0, 0.3);
+}
+
+.favTeasCol {
+    background-color: #818C6C;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.active-tab {
+    background-color: #F6F1DB;
+    cursor: pointer;
+}
+
+.active-tab::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+}
+
+.tab {
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: #F6F1DB;
+}
+
+.active-content {
+    display: block;
+}
+
+img.fav-tea {
+    border-radius: 8px;
+    aspect-ratio: 270/270;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img.social-icons {
+    max-height: 20px;
+    cursor: pointer;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+a.a-social-icons {
+    justify-content: end;
+}
+
